@@ -1,57 +1,85 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discovering God’s Grace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Merriweather', serif;
+      }
+      .font-sans {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="p-6 border-b border-gray-200 flex items-center justify-between">
+      <h1 class="text-2xl md:text-3xl font-bold tracking-tight">
+        Discovering God’s Grace
+      </h1>
+      <nav class="space-x-4 text-sm md:text-base font-sans">
+        <a href="#library" class="text-gray-600 hover:text-black">Library</a>
+        <a href="#workshop" class="text-gray-600 hover:text-black">Workshop</a>
+        <a href="#dissemination" class="text-gray-600 hover:text-black">Dissemination</a>
+        <a href="#about" class="text-gray-600 hover:text-black">About</a>
+      </nav>
+    </header>
 
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-white text-gray-800 font-serif">
-      {/* Header */}
-      <header className="p-6 border-b border-gray-200 flex items-center justify-between">
-        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Discovering God’s Grace</h1>
-        <nav className="space-x-4 text-sm md:text-base font-sans">
-          <a href="#library" className="text-gray-600 hover:text-black">Library</a>
-          <a href="#workshop" className="text-gray-600 hover:text-black">Workshop</a>
-          <a href="#dissemination" className="text-gray-600 hover:text-black">Dissemination</a>
-          <a href="#about" className="text-gray-600 hover:text-black">About</a>
-        </nav>
-      </header>
+    <!-- Hero / Intro Section -->
+    <section class="py-24 px-6 text-center bg-white">
+      <h2 class="text-4xl md:text-5xl font-light leading-snug mb-6">
+        Biblically faithful.<br />
+        Logically sound.<br />
+        Artistically tasteful literature.
+      </h2>
+      <p class="max-w-xl mx-auto text-lg text-gray-600 font-sans">
+        A minimal platform for the creation, preservation, and sharing of
+        gospel-centered tracts — rendered with theological depth, poetic
+        clarity, and sensory elegance.
+      </p>
+    </section>
 
-      {/* Hero / Intro Section */}
-      <section className="py-24 px-6 text-center bg-white">
-        <h2 className="text-4xl md:text-5xl font-light leading-snug mb-6">
-          Biblically faithful.<br />
-          Logically sound.<br />
-          Artistically tasteful literature.
-        </h2>
-        <p className="max-w-xl mx-auto text-lg text-gray-600 font-sans">
-          A minimal platform for the creation, preservation, and sharing of gospel-centered tracts — rendered with theological depth, poetic clarity, and sensory elegance.
+    <!-- Three-Fold Purpose -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 py-16">
+      <div class="border p-6 rounded-lg shadow-sm hover:shadow-md transition">
+        <h3 class="text-xl font-bold mb-2">1. Development</h3>
+        <p class="text-gray-600 font-sans">
+          We nurture the crafting of tracts that speak to both heart and mind —
+          grounded in truth and delivered with artistic beauty.
         </p>
-      </section>
+      </div>
+      <div class="border p-6 rounded-lg shadow-sm hover:shadow-md transition">
+        <h3 class="text-xl font-bold mb-2">2. Preservation</h3>
+        <p class="text-gray-600 font-sans">
+          Curating a timeless library of literature that upholds the gospel
+          with clarity, integrity, and theological consistency.
+        </p>
+      </div>
+      <div class="border p-6 rounded-lg shadow-sm hover:shadow-md transition">
+        <h3 class="text-xl font-bold mb-2">3. Dissemination</h3>
+        <p class="text-gray-600 font-sans">
+          Sharing tracts through digital and physical means — free to read,
+          print, and distribute to the ends of the earth.
+        </p>
+      </div>
+    </section>
 
-      {/* Three-Fold Purpose */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 py-16">
-        <div className="border p-6 rounded-lg shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-bold mb-2">1. Development</h3>
-          <p className="text-gray-600 font-sans">
-            We nurture the crafting of tracts that speak to both heart and mind — grounded in truth and delivered with artistic beauty.
-          </p>
-        </div>
-        <div className="border p-6 rounded-lg shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-bold mb-2">2. Preservation</h3>
-          <p className="text-gray-600 font-sans">
-            Curating a timeless library of literature that upholds the gospel with clarity, integrity, and theological consistency.
-          </p>
-        </div>
-        <div className="border p-6 rounded-lg shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-bold mb-2">3. Dissemination</h3>
-          <p className="text-gray-600 font-sans">
-            Sharing tracts through digital and physical means — free to read, print, and distribute to the ends of the earth.
-          </p>
-        </div>
-      </section>
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500 py-12 border-t">
+      © <span id="year"></span> Discovering God’s Grace. All content is made to be shared.
+    </footer>
 
-      {/* Footer */}
-      <footer className="text-center text-sm text-gray-500 py-12 border-t">
-        © {new Date().getFullYear()} Discovering God’s Grace. All content is made to be shared.
-      </footer>
-    </main>
-  );
-}
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
