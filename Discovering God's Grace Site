@@ -1,8 +1,7 @@
 <html>
-import React from "react";
-
-export default function Home() {
-  return (
+<head>
+<style>
+body {
     <main className="min-h-screen bg-white text-gray-800 font-serif">
       {/* Header */}
       <header className="p-6 border-b border-gray-200 flex items-center justify-between">
